@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html>
+<style>
+	.stripe {
+    background-color:#00041f;
+    height: 100px;
+    position: relative;
+	}
+	.stripe:before {
+    content:"";
+    background-color:#00041f;
+    position: absolute;
+    height: 100%;
+    width: 4000px;
+    left: -2000px;
+    z-index: -1;
+	}
+</style>
 	<head>
 		<meta charset = "UTF-8">
 		<meta name = "description" content = "We make recipes here!">
@@ -13,12 +29,12 @@
 			<p>Here we either improve our dishes or set everything on fire</p>
 			
 		</header>
-		<main style = "background-color: #00041f;">
+		<main class = "stripe">
 			<img src = "six_pack.jpg" alt = "sixpack" style = "width: 400px; height: 223px;">
 			<br />
 			<a href ="https://www.youtube.com/watch?v=OlsyZJYisZw">
 				Bird Fisting Fights
-			</a> 
+			</a>
 		</main>
 		<footer>
 
